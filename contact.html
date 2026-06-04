@@ -143,8 +143,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
   <div class="contact-grid">
     <div>
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <!-- SETUP: Replace YOUR_FORM_ID above with your Formspree endpoint, or swap for Google Forms action URL -->
+      <form id="contactForm">
+        <!-- Submits via the visitor's email client to info@socialhealthsystems.com (see script below) -->
         <div class="form-group">
           <label class="form-label">Your Name</label>
           <input type="text" name="name" class="form-input" placeholder="Full name" required>
@@ -201,8 +201,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
       </div>
       <div class="info-item" style="border-bottom:none;">
         <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-        <div><div class="info-label">Book a Call</div><div class="info-value">Schedule a 30-minute Social Health conversation directly on our <a href="#">calendar →</a></div>
-        <!-- SETUP: Replace # above with your Google Calendar Appointment Scheduling link -->
+        <div><div class="info-label">Book a Call</div><div class="info-value">Schedule a 30-minute Social Health conversation directly on our <a href="https://calendar.app.google/Qd5DaC5wspfv7H7n7" target="_blank" rel="noopener">calendar →</a></div>
+        </div>
         </div>
       </div>
 
@@ -236,16 +236,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 <script>
 document.getElementById('contactForm').addEventListener('submit', function(e) {
-  // If no Formspree ID is set, prevent default and show success
-  if (this.action.includes('YOUR_FORM_ID')) {
-    e.preventDefault();
-    const data = new FormData(this);
-    const subject = encodeURIComponent('SHs Contact: ' + (data.get('interest') || 'General'));
-    const body = encodeURIComponent('Name: ' + data.get('name') + '\nOrg: ' + data.get('organization') + '\nInterest: ' + data.get('interest') + '\n\n' + data.get('message'));
-    window.open('mailto:info@socialhealthsystems.com?subject=' + subject + '&body=' + body);
-    this.style.display = 'none';
-    document.getElementById('formSuccess').classList.add('show');
-  }
+  // Submit via the visitor's email client (no form backend)
+  e.preventDefault();
+  const data = new FormData(this);
+  const subject = encodeURIComponent('SHs Contact: ' + (data.get('interest') || 'General'));
+  const body = encodeURIComponent('Name: ' + data.get('name') + '\nOrg: ' + data.get('organization') + '\nInterest: ' + data.get('interest') + '\n\n' + data.get('message'));
+  window.location.href = 'mailto:info@socialhealthsystems.com?subject=' + subject + '&body=' + body;
+  this.style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
 });
 </script>
 </body>
