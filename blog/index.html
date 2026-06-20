@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Social Health Systems Blog — Insights on Connection, Culture, and Relational Infrastructure</title>
+<meta name="description" content="Read insights from Social Health Systems on Social Health, connection, relational infrastructure, schools, organizations, and culture change.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://socialhealthsystems.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://socialhealthsystems.com/blog/">
+<meta property="og:title" content="Social Health Systems Blog — Insights on Connection, Culture, and Relational Infrastructure">
+<meta property="og:description" content="Read insights from Social Health Systems on Social Health, connection, relational infrastructure, schools, organizations, and culture change.">
+<meta property="og:site_name" content="Social Health Systems">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Social Health Systems Blog">
+<meta name="twitter:description" content="Insights on Social Health, connection, and relational infrastructure from Social Health Systems.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Social Health Systems Blog",
+  "description": "Insights on Social Health, connection, relational infrastructure, schools, organizations, and culture change.",
+  "url": "https://socialhealthsystems.com/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Social Health Systems",
+    "url": "https://socialhealthsystems.com/"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-2: #f7f7f5;
+  --bg-3: #eeeeea;
+  --ink: #0f1311;
+  --ink-2: #1d211f;
+  --ink-soft: #45494a;
+  --muted: #6e7372;
+  --muted-2: #a8aba8;
+  --line: rgba(15, 19, 17, 0.08);
+  --line-strong: rgba(15, 19, 17, 0.2);
+  --green: #0a5c44;
+  --green-2: #1a7d5f;
+  --green-soft: #d4e9df;
+  --gold: #b3853a;
+  --gold-soft: #f0e2c4;
+  --f-display: 'Inter Tight', system-ui, sans-serif;
+  --f-serif: 'Source Serif 4', Georgia, serif;
+  --f-sans: 'Inter Tight', system-ui, sans-serif;
+  --f-mono: 'JetBrains Mono', monospace;
+  --max: 1320px;
+  --gutter: clamp(20px, 4vw, 64px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--f-sans); background: var(--bg); color: var(--ink); line-height: 1.65; font-weight: 400; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+/* NAV */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 18px var(--gutter);
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--f-display); font-weight: 600; font-size: 20px; letter-spacing: -0.02em; }
+.brand-mark { width: 32px; height: 32px; }
+.brand-sub { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--green); display: block; margin-top: -2px; font-weight: 500; }
+.nav-links { display: flex; gap: 28px; font-size: 13px; color: var(--ink-soft); font-weight: 500; }
+.nav-links a { transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--green); }
+.nav-cta { display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; background: var(--green); color: #fff; border-radius: 4px; font-size: 13px; font-weight: 600; transition: background 0.2s; }
+.nav-cta:hover { background: var(--green-2); }
+@media (max-width: 940px) { .nav-links { display: none; } }
+
+/* HERO */
+.page-hero { padding: 160px var(--gutter) 80px; border-bottom: 1px solid var(--line); }
+.page-hero-inner { max-width: var(--max); margin: 0 auto; }
+.page-eyebrow { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--green); display: flex; align-items: center; gap: 12px; margin-bottom: 28px; font-weight: 500; }
+.page-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--green); }
+.page-title { font-family: var(--f-display); font-weight: 500; font-size: clamp(36px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.035em; margin-bottom: 24px; max-width: 900px; }
+.page-title em { font-style: italic; color: var(--green); font-family: var(--f-serif); font-weight: 400; }
+.page-sub { font-size: clamp(16px, 1.3vw, 19px); color: var(--ink-soft); max-width: 640px; line-height: 1.65; }
+
+/* BLOG GRID */
+.blog-section { max-width: var(--max); margin: 0 auto; padding: 80px var(--gutter); }
+.blog-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; margin-top: 48px; }
+@media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr; } }
+
+.post-feature { background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; transition: all 0.25s; }
+.post-feature:hover { border-color: var(--green); transform: translateY(-2px); }
+.post-feature-img { height: 280px; overflow: hidden; }
+.post-feature-img svg { width: 100%; height: 100%; }
+.post-feature-body { padding: 36px 32px 32px; }
+.post-tag { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); background: var(--gold-soft); padding: 4px 10px; border-radius: 3px; display: inline-block; margin-bottom: 16px; font-weight: 600; }
+.post-title { font-family: var(--f-display); font-weight: 600; font-size: clamp(22px, 2.5vw, 30px); letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 14px; color: var(--ink); }
+.post-title em { font-style: italic; color: var(--green); font-family: var(--f-serif); font-weight: 400; }
+.post-dek { color: var(--ink-soft); font-size: 16px; line-height: 1.6; margin-bottom: 20px; }
+.post-meta { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--muted); }
+.post-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--green); border-bottom: 1px solid var(--green); padding-bottom: 1px; transition: all 0.2s; margin-top: 20px; }
+.post-link:hover { color: var(--ink); border-color: var(--ink); }
+
+.sidebar { display: flex; flex-direction: column; gap: 24px; }
+.sidebar-section { background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; padding: 28px 24px; }
+.sidebar-title { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); font-weight: 600; margin-bottom: 20px; }
+.sidebar-links { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.sidebar-links li a { font-size: 14px; color: var(--ink-soft); transition: color 0.2s; display: flex; align-items: center; gap: 8px; }
+.sidebar-links li a::before { content: '→'; color: var(--gold); font-size: 12px; }
+.sidebar-links li a:hover { color: var(--green); }
+
+/* CTA BAND */
+.cta-band { padding: 80px var(--gutter); background: var(--ink); color: var(--bg); text-align: center; }
+.cta-band-inner { max-width: 640px; margin: 0 auto; }
+.cta-band h2 { font-family: var(--f-display); font-weight: 500; font-size: clamp(28px, 3.5vw, 44px); letter-spacing: -0.03em; margin-bottom: 16px; color: var(--bg); line-height: 1.1; }
+.cta-band h2 em { color: var(--gold); font-family: var(--f-serif); font-style: italic; font-weight: 400; }
+.cta-band p { color: rgba(255,255,255,0.7); margin-bottom: 28px; font-size: 16px; }
+.cta-band .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; border-radius: 4px; font-size: 14px; font-weight: 600; background: var(--gold); color: var(--ink); transition: all 0.25s; }
+.cta-band .btn:hover { background: var(--bg); }
+.cta-band .btn.ghost { background: transparent; border: 1px solid rgba(255,255,255,0.25); color: var(--bg); margin-left: 8px; }
+.cta-band .btn.ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+/* FOOTER */
+.footer { background: var(--bg-2); padding: 40px var(--gutter); text-align: center; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--muted); border-top: 1px solid var(--line); }
+.footer a { color: var(--green); transition: color 0.2s; }
+.footer a:hover { color: var(--ink); }
+.footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin-bottom: 20px; }
+.footer-ip { margin-top: 20px; font-size: 10px; line-height: 1.7; max-width: 780px; margin-left: auto; margin-right: auto; color: var(--muted-2); }
+
+@media (max-width: 640px) { .page-hero { padding: 120px var(--gutter) 60px; } .blog-section { padding: 60px var(--gutter); } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="brand">
+    <span class="brand-mark"><svg viewBox="0 0 32 32" fill="none"><circle cx="11" cy="11" r="5" stroke="#0f1311" stroke-width="1.6"/><circle cx="21" cy="21" r="5" stroke="#0a5c44" stroke-width="1.6"/><line x1="14.5" y1="14.5" x2="17.5" y2="17.5" stroke="#0f1311" stroke-width="1.6"/></svg></span>
+    <span>SHs <span class="brand-sub">Social Health Systems</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/what-is-social-health.html">Social Health</a>
+    <a href="/framework.html">Framework</a>
+    <a href="/accreditation.html">Accreditation</a>
+    <a href="/schools.html">Schools</a>
+    <a href="/enterprise.html">Enterprise</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <a href="/contact.html" class="nav-cta">Get Started →</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-eyebrow">Blog</div>
+    <h1 class="page-title">Insights on <em>Connection,</em> Culture, and the Rebuild.</h1>
+    <p class="page-sub">Research, field notes, and perspectives from Social Health Systems — on Social Health, relational infrastructure, schools, organizations, and communities.</p>
+  </div>
+</section>
+
+<div class="blog-section">
+  <div class="blog-grid">
+    <main>
+      <a href="/blog/what-is-the-social-connection-collapse.html" class="post-feature" style="display:block; text-decoration:none; color:inherit;">
+        <div class="post-feature-img">
+          <svg viewBox="0 0 800 280" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a5c44"/><stop offset="1" stop-color="#1d211f"/></linearGradient></defs>
+            <rect width="800" height="280" fill="url(#bg1)"/>
+            <g stroke="rgba(179,133,58,0.3)" stroke-width="1" fill="none">
+              <circle cx="400" cy="140" r="80"/><circle cx="400" cy="140" r="130"/><circle cx="400" cy="140" r="180"/>
+            </g>
+            <circle cx="400" cy="140" r="10" fill="#b3853a"/>
+            <line x1="400" y1="140" x2="260" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <line x1="400" y1="140" x2="520" y2="180" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <line x1="400" y1="140" x2="350" y2="240" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <circle cx="260" cy="80" r="6" fill="rgba(255,255,255,0.4)"/>
+            <circle cx="520" cy="180" r="6" fill="rgba(255,255,255,0.4)"/>
+            <circle cx="350" cy="240" r="6" fill="rgba(255,255,255,0.4)"/>
+            <text x="50" y="50" font-family="JetBrains Mono" font-size="10" letter-spacing="3" fill="rgba(179,133,58,0.8)" font-weight="600">SOCIAL CONNECTION COLLAPSE</text>
+          </svg>
+        </div>
+        <div class="post-feature-body">
+          <span class="post-tag">Featured Post</span>
+          <h2 class="post-title">What Is the <em>Social Connection Collapse?</em></h2>
+          <p class="post-dek">Digital contact is not the same as human connection. We are living through a systemic breakdown of relational infrastructure — and Social Health Systems treats connection as the infrastructure we have to rebuild.</p>
+          <div class="post-meta">By Corinne Siaosi &nbsp;·&nbsp; Editorial Intern, Social Health Systems &nbsp;·&nbsp; June 2026</div>
+          <span class="post-link">Read the Post →</span>
+        </div>
+      </a>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-title">Explore SHS</div>
+        <ul class="sidebar-links">
+          <li><a href="/what-is-social-health.html">What Is Social Health?</a></li>
+          <li><a href="/framework.html">The SHS Framework</a></li>
+          <li><a href="/accreditation.html">Accreditation</a></li>
+          <li><a href="/schools.html">For Schools</a></li>
+          <li><a href="/enterprise.html">For Organizations</a></li>
+          <li><a href="/healthcare.html">For Healthcare</a></li>
+          <li><a href="/community.html">For Communities</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-title">Field Notes</div>
+        <ul class="sidebar-links">
+          <li><a href="/article-dei-to-shs.html">From DEI to SHs</a></li>
+          <li><a href="/article-360b-problem.html">The $360B Problem</a></li>
+          <li><a href="/article-herriman.html">Herriman, Five Years On</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section" style="background: var(--green); border-color: var(--green);">
+        <div class="sidebar-title" style="color: rgba(255,255,255,0.6);">Start a Conversation</div>
+        <p style="font-size:14px; color:rgba(255,255,255,0.85); margin-bottom:16px; line-height:1.5;">Ready to bring Social Health to your school, organization, or community?</p>
+        <a href="/contact.html" style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#b3853a; color:#fff; border-radius:4px; font-size:13px; font-weight:600;">Contact Us →</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section class="cta-band">
+  <div class="cta-band-inner">
+    <h2>Connection Is <em>Infrastructure.</em></h2>
+    <p>Social Health is the missing third pillar of well-being — measurable, trainable, and accreditable. See how SHS can work for your organization.</p>
+    <a href="/what-is-social-health.html" class="btn">What Is Social Health? →</a>
+    <a href="/contact.html" class="btn ghost">Talk to Our Team</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-nav">
+    <a href="/">Home</a>
+    <a href="/what-is-social-health.html">Social Health</a>
+    <a href="/framework.html">Framework</a>
+    <a href="/accreditation.html">Accreditation</a>
+    <a href="/schools.html">Schools</a>
+    <a href="/enterprise.html">Enterprise</a>
+    <a href="/healthcare.html">Healthcare</a>
+    <a href="/community.html">Community</a>
+    <a href="/about.html">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <p>© 2011–2026 Social Health Systems</p>
+  <p class="footer-ip">IP Notice: © 2010–2026 Social Health Systems. All rights reserved. Connection Currency™, Connection Before Concern™, Statements Before Questions™, Highs and Lows™, the Five Pillars™, Experiential Lessons™, Practical Tools™, and related curriculum methods are trademarks, service marks, and/or protected intellectual property of Social Health Systems. Social Health is used as the broader well-being category and SHS framework language.</p>
+</footer>
+
+</body>
+</html>
