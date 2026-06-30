@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Health 9-Module Curriculum | Five Pillars Framework | Certified Training</title>
+    <meta name="description" content="Social Health 9-module curriculum across 6 phases. Five Pillars framework mapped to observable capabilities. Leads to Social Health Certified, Practitioner, Specialist credentials. Schedule free curriculum walkthrough.">
+    <meta name="og:title" content="Social Health 9-Module Curriculum | Five Pillars Framework">
+    <meta name="og:description" content="9 modules, 6 phases, 5 Pillars. Behavioral training framework for relational excellence. Social Health Certified through Master credentials.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #fafafa; }
+        .hero { background: linear-gradient(135deg, #2d9c7f 0%, #0d7a5a 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; }
+        .hero p { font-size: 1.15rem; max-width: 700px; margin: 0 auto; opacity: 0.95; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 60px 20px; }
+        
+        /* Overview Box */
+        .overview { background: white; padding: 50px; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .overview h2 { color: #2d9c7f; font-size: 1.8rem; margin-bottom: 20px; }
+        .overview p { font-size: 1.05rem; color: #555; line-height: 1.8; margin-bottom: 15px; }
+        .overview p:last-child { margin-bottom: 0; }
+        
+        /* Phase Timeline */
+        .phases { margin: 50px 0; }
+        .phase-header { text-align: center; margin-bottom: 40px; }
+        .phase-header h2 { color: #2d9c7f; font-size: 2rem; margin-bottom: 10px; }
+        .phase-list { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 40px 0; }
+        .phase-item { background: white; padding: 30px; border-left: 5px solid #2d9c7f; border-radius: 4px; }
+        .phase-item h3 { color: #2d9c7f; font-size: 1.1rem; margin-bottom: 10px; font-weight: 700; }
+        .phase-item p { color: #666; font-size: 0.95rem; }
+        .phase-item .modules { color: #2d9c7f; font-weight: 600; margin-top: 10px; }
+        
+        /* Module Grid */
+        .module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin: 40px 0; }
+        .module-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .module-card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+        .module-header { background: #2d9c7f; color: white; padding: 25px; }
+        .module-num { font-size: 2.5rem; font-weight: 700; margin-bottom: 5px; }
+        .module-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
+        .module-pillar { font-size: 0.85rem; opacity: 0.9; background: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 20px; display: inline-block; }
+        .module-body { padding: 25px; }
+        .module-body h4 { color: #2d9c7f; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; margin-top: 15px; }
+        .module-body h4:first-child { margin-top: 0; }
+        .module-body p { font-size: 0.95rem; color: #666; margin-bottom: 10px; }
+        .module-body ul { margin-left: 20px; }
+        .module-body li { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+        .credential-badge { background: #f0f0f0; padding: 10px; border-radius: 4px; font-size: 0.85rem; color: #2d9c7f; font-weight: 600; margin-top: 15px; }
+        
+        /* Pillar Legend */
+        .pillar-legend { background: white; padding: 40px; border-radius: 8px; margin: 50px 0; }
+        .pillar-legend h3 { color: #2d9c7f; font-size: 1.4rem; margin-bottom: 30px; }
+        .pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .pillar-item h4 { color: #2d9c7f; font-weight: 700; margin-bottom: 10px; }
+        .pillar-item p { color: #666; font-size: 0.95rem; }
+        
+        /* Learning Outcomes */
+        .outcomes { background: white; padding: 40px; border-radius: 8px; margin: 40px 0; border-left: 5px solid #2d9c7f; }
+        .outcomes h3 { color: #2d9c7f; font-size: 1.3rem; margin-bottom: 20px; }
+        .outcomes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
+        .outcome-item { }
+        .outcome-item h4 { color: #2d9c7f; font-weight: 700; margin-bottom: 10px; }
+        .outcome-item ul { margin-left: 20px; }
+        .outcome-item li { font-size: 0.95rem; color: #666; margin-bottom: 8px; }
+        
+        /* CTA */
+        .cta-section { text-align: center; padding: 60px 20px; }
+        .cta-button { display: inline-block; background: #2d9c7f; color: white; padding: 18px 45px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; margin: 10px; transition: background 0.3s; border: none; cursor: pointer; }
+        .cta-button:hover { background: #1a5f52; }
+        .cta-secondary { background: transparent; color: #2d9c7f; border: 2px solid #2d9c7f; }
+        .cta-secondary:hover { background: #2d9c7f; color: white; }
+        
+        /* Download Section */
+        .download-section { background: #2d9c7f; color: white; padding: 40px; border-radius: 8px; margin: 40px 0; text-align: center; }
+        .download-section h3 { font-size: 1.3rem; margin-bottom: 20px; }
+        .download-section p { margin-bottom: 20px; opacity: 0.95; }
+        
+        @media (max-width: 1024px) {
+            .module-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .module-grid { grid-template-columns: 1fr; }
+            .phase-list { grid-template-columns: 1fr; }
+            .outcomes-grid { grid-template-columns: 1fr; }
+            .pillar-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>The 9-Module Curriculum</h1>
+    <p>Six phases. Five Pillars. Nine observable, trainable, measurable capabilities.</p>
+</div>
+
+<section class="container">
+    <div class="overview">
+        <h2>How the Curriculum is Organized</h2>
+        <p>The nine modules sequence into six phases that mirror how relational capability actually installs in adults. Each module installs one specific, observable capability. Each capability is assessed against a defined rubric at a defined credential tier.</p>
+        <p><strong>Result:</strong> Participants don't "take" the curriculum in two days. They earn credentials in a multi-year arc with demonstrated behavior change, observed practice, and portfolio evidence.</p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="phase-header">
+        <h2>The 6-Phase Arc</h2>
+        <p style="color: #666; font-size: 1.05rem;">How relational capability installs sequentially</p>
+    </div>
+    
+    <div class="phase-list">
+        <div class="phase-item">
+            <h3>Phase 1 — Foundation</h3>
+            <p>Establish the operating definition. Generate first-week behavioral evidence that the work changes interactions.</p>
+            <div class="modules">Modules 1–2</div>
+        </div>
+        <div class="phase-item">
+            <h3>Phase 2 — External Systems</h3>
+            <p>Map the systems people are already inside—digital influence and team dynamics—and the role they default to in each.</p>
+            <div class="modules">Modules 3–4</div>
+        </div>
+        <div class="phase-item">
+            <h3>Phase 3 — Communication Toolkit</h3>
+            <p>Install the three primary relational tools as a single functional group. This is the credential-defining module.</p>
+            <div class="modules">Module 5</div>
+        </div>
+        <div class="phase-item">
+            <h3>Phase 4 — Self-Relational Capability</h3>
+            <p>Make the relationship with self observable. This is the leverage module—every later capability scales with the quality of this work.</p>
+            <div class="modules">Module 6</div>
+        </div>
+        <div class="phase-item">
+            <h3>Phase 5 — Peers and Influence</h3>
+            <p>Apply the toolkit to peer and professional-network discernment.</p>
+            <div class="modules">Module 7</div>
+        </div>
+        <div class="phase-item">
+            <h3>Phase 6 — Synthesis and Close</h3>
+            <p>Apply the full toolkit to negotiation under pressure. Close with cohort retrospective.</p>
+            <div class="modules">Modules 8–9</div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2 style="color: #2d9c7f; font-size: 1.8rem; margin: 40px 0 30px; text-align: center;">The Nine Modules at a Glance</h2>
+    
+    <div class="module-grid">
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">1</div>
+                <div class="module-title">Social Health Definition</div>
+                <div class="module-pillar">Connection Before Concern</div>
+            </div>
+            <div class="module-body">
+                <p>Establish the operating definition. Generate first behavioral evidence that deliberate relational work changes outcomes.</p>
+                <h4>Duration</h4>
+                <p>3.5 hours</p>
+                <h4>Assessment</h4>
+                <p>Self-audit + 7-day behavioral log</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">2</div>
+                <div class="module-title">Connection Currency Tools</div>
+                <div class="module-pillar">Connection Currency Tools</div>
+            </div>
+            <div class="module-body">
+                <p>Deploy the Smile Experiment and first Connection Currency Tool. Generate visible results before harder modules arrive.</p>
+                <h4>Duration</h4>
+                <p>3.5 hours</p>
+                <h4>Assessment</h4>
+                <p>7-day deployment log with outcomes</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">3</div>
+                <div class="module-title">Digital Influence Mapping</div>
+                <div class="module-pillar">Connection Currency Tools</div>
+            </div>
+            <div class="module-body">
+                <p>Map the digital layer of relational bandwidth—creators, platforms, information sources shaping identity and decision-making.</p>
+                <h4>Duration</h4>
+                <p>4 hours</p>
+                <h4>Assessment</h4>
+                <p>Digital influence audit</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">4</div>
+                <div class="module-title">Role in Relational Systems</div>
+                <div class="module-pillar">Statements Before Questions</div>
+            </div>
+            <div class="module-body">
+                <p>Identify the role you default to in team dynamics—peacekeeper, escalator, mediator. Calibrate for Module 5 deployment.</p>
+                <h4>Duration</h4>
+                <p>4 hours</p>
+                <h4>Assessment</h4>
+                <p>10-dimension relational systems map</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">5</div>
+                <div class="module-title">Communication Toolkit</div>
+                <div class="module-pillar">Statements Before Questions</div>
+            </div>
+            <div class="module-body">
+                <p><strong>The credential-defining module.</strong> Install Statements Before Questions, The And™, and Connection-First protocols. This is where communication mastery is assessed.</p>
+                <h4>Duration</h4>
+                <p>3 half-days over 2–3 weeks</p>
+                <h4>Assessment</h4>
+                <p>2 observed role-plays + 3-deployment workplace log</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">6</div>
+                <div class="module-title">Self-Relational Capability</div>
+                <div class="module-pillar">Relational Response to Mental Health</div>
+            </div>
+            <div class="module-body">
+                <p><strong>The leverage module.</strong> Interrupt self-criticism patterns that drive avoidance. Make the relationship with self observable. Foundation for all later capability.</p>
+                <h4>Duration</h4>
+                <p>4 sessions over 60 days</p>
+                <h4>Assessment</h4>
+                <p>60-day portfolio + 360 feedback</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">7</div>
+                <div class="module-title">Peer Network Design</div>
+                <div class="module-pillar">Relationship-Based Culture</div>
+            </div>
+            <div class="module-body">
+                <p>Make your professional network visible as an asset. Design peer relationships deliberately instead of by default. Pair with Module 6 self-work.</p>
+                <h4>Duration</h4>
+                <p>3 sessions over 6 weeks</p>
+                <h4>Assessment</h4>
+                <p>Network design audit + peer feedback</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">8</div>
+                <div class="module-title">Negotiation Under Pressure</div>
+                <div class="module-pillar">Relational Response to Mental Health</div>
+            </div>
+            <div class="module-body">
+                <p>Apply the full toolkit to high-stakes negotiation. Uses Harvard 7-element framework with relational integration. Diagnostic for what holds under stress.</p>
+                <h4>Duration</h4>
+                <p>2 days</p>
+                <h4>Assessment</h4>
+                <p>Scenario negotiation + toolkit deployment</p>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-num">9</div>
+                <div class="module-title">Cohort Retrospective</div>
+                <div class="module-pillar">Relationship-Based Culture</div>
+            </div>
+            <div class="module-body">
+                <p>Portable retrospective structure. Container for synthesis, closure, and transfer to teams and organizations.</p>
+                <h4>Duration</h4>
+                <p>2 hours</p>
+                <h4>Assessment</h4>
+                <p>Cohort reflection + forward plan</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="pillar-legend">
+        <h3>How Modules Map to the Five Pillars</h3>
+        <p style="color: #666; margin-bottom: 30px;">Each module installs capability aligned to one primary Pillar. The Pillars are the doctrine; the modules are how the doctrine becomes practice.</p>
+        
+        <div class="pillar-grid">
+            <div class="pillar-item">
+                <h4>1. Connection Before Concern</h4>
+                <p>People respond better to being understood than corrected. Modules 1, 5, 8.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>2. Connection Currency Tools</h4>
+                <p>Five foundational micro-behaviors that make big safety deposits. Modules 2, 3.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>3. Statements Before Questions</h4>
+                <p>Questions trigger defense; statements trigger reflection. Modules 4, 5.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>4. Relational Response to Mental Health</h4>
+                <p>Behavior is communication. Connection is intervention. Modules 6, 8.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>5. Relationship-Based Culture</h4>
+                <p>Curriculum doesn't teach. Relationships do. Modules 7, 9.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="outcomes">
+        <h3>What Participants Leave With</h3>
+        
+        <div class="outcomes-grid">
+            <div class="outcome-item">
+                <h4>Phase 1 — Foundation (Modules 1–4)</h4>
+                <ul>
+                    <li>Precise definition of Social Health</li>
+                    <li>First behavioral evidence of impact</li>
+                    <li>Awareness of role in relational systems</li>
+                    <li>Literacy in digital influence</li>
+                </ul>
+            </div>
+            <div class="outcome-item">
+                <h4>Phase 2 — Communication Toolkit (Module 5)</h4>
+                <ul>
+                    <li>Mastery of Communication Toolkit</li>
+                    <li>Ability to de-escalate conflict</li>
+                    <li>Capacity to deliver feedback that lands</li>
+                    <li>Observed behavior change in 1:1s and team settings</li>
+                </ul>
+            </div>
+            <div class="outcome-item">
+                <h4>Phase 3 — Self-Relational Work (Modules 6–7)</h4>
+                <ul>
+                    <li>Interrupted self-criticism patterns</li>
+                    <li>Self-relational awareness under stress</li>
+                    <li>Deliberately designed peer network</li>
+                    <li>Executive presence in high-stakes contexts</li>
+                </ul>
+            </div>
+            <div class="outcome-item">
+                <h4>Phase 4 — Advanced Application (Module 8)</h4>
+                <ul>
+                    <li>Mastery of negotiation under pressure</li>
+                    <li>Full toolkit deployment in high-stakes contexts</li>
+                    <li>Capacity to assess and support others</li>
+                    <li>Authority to scale curriculum with fidelity</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="download-section container">
+    <h3>Access the Full Curriculum</h3>
+    <p>Download the complete 9-module curriculum reference with delivery specifications, assessment rubrics, and integration points.</p>
+    <a href="mailto:partner@socialhealthsystems.com?subject=Request%20Full%20Curriculum" class="cta-button">Request Full Curriculum PDF</a>
+</section>
+
+<section class="cta-section">
+    <h2 style="color: #2d9c7f; margin-bottom: 30px;">Ready to Understand the Path?</h2>
+    <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px;">A 30-minute curriculum walkthrough covers your organization's needs and where SHs fits.</p>
+    <a href="https://calendly.com/shs-team/curriculum-walkthrough" class="cta-button">Schedule 30-Min Walkthrough</a>
+    <a href="/why-social-health-systems.html" class="cta-button cta-secondary">Learn How SHs Differs</a>
+</section>
+
+</body>
+</html>
