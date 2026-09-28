@@ -9,8 +9,12 @@
     <meta name="og:description" content="9 modules, 6 phases, 5 Pillars. Behavioral training framework for relational excellence. Social Health Certified through Master credentials.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #fafafa; }
-        .hero { background: linear-gradient(135deg, #2d9c7f 0%, #0d7a5a 100%); color: white; padding: 80px 20px; text-align: center; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #0F172A; background: #F8FAFC; }
+        .page-nav { min-height: 64px; padding: 0 20px; background: white; border-bottom: 1px solid #E2E8F0; display: flex; align-items: center; }
+        .page-nav-inner { width: 100%; max-width: 1200px; margin: 0 auto; }
+        .nav-back { color: #0F172A; text-decoration: none; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+        .nav-back:hover { color: #0F172A; }
+        .hero { background: linear-gradient(135deg, #65A30D 0%, #0F172A 100%); color: white; padding: 80px 20px; text-align: center; }
         .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; }
         .hero p { font-size: 1.15rem; max-width: 700px; margin: 0 auto; opacity: 0.95; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -18,61 +22,61 @@
         
         /* Overview Box */
         .overview { background: white; padding: 50px; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-        .overview h2 { color: #2d9c7f; font-size: 1.8rem; margin-bottom: 20px; }
-        .overview p { font-size: 1.05rem; color: #555; line-height: 1.8; margin-bottom: 15px; }
+        .overview h2 { color: #65A30D; font-size: 1.8rem; margin-bottom: 20px; }
+        .overview p { font-size: 1.05rem; color: #64748B; line-height: 1.8; margin-bottom: 15px; }
         .overview p:last-child { margin-bottom: 0; }
         
         /* Phase Timeline */
         .phases { margin: 50px 0; }
         .phase-header { text-align: center; margin-bottom: 40px; }
-        .phase-header h2 { color: #2d9c7f; font-size: 2rem; margin-bottom: 10px; }
+        .phase-header h2 { color: #65A30D; font-size: 2rem; margin-bottom: 10px; }
         .phase-list { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 40px 0; }
-        .phase-item { background: white; padding: 30px; border-left: 5px solid #2d9c7f; border-radius: 4px; }
-        .phase-item h3 { color: #2d9c7f; font-size: 1.1rem; margin-bottom: 10px; font-weight: 700; }
-        .phase-item p { color: #666; font-size: 0.95rem; }
-        .phase-item .modules { color: #2d9c7f; font-weight: 600; margin-top: 10px; }
+        .phase-item { background: white; padding: 30px; border-left: 5px solid #65A30D; border-radius: 4px; }
+        .phase-item h3 { color: #65A30D; font-size: 1.1rem; margin-bottom: 10px; font-weight: 700; }
+        .phase-item p { color: #64748B; font-size: 0.95rem; }
+        .phase-item .modules { color: #65A30D; font-weight: 600; margin-top: 10px; }
         
         /* Module Grid */
         .module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin: 40px 0; }
         .module-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
         .module-card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
-        .module-header { background: #2d9c7f; color: white; padding: 25px; }
+        .module-header { background: #65A30D; color: white; padding: 25px; }
         .module-num { font-size: 2.5rem; font-weight: 700; margin-bottom: 5px; }
         .module-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
         .module-pillar { font-size: 0.85rem; opacity: 0.9; background: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 20px; display: inline-block; }
         .module-body { padding: 25px; }
-        .module-body h4 { color: #2d9c7f; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; margin-top: 15px; }
+        .module-body h4 { color: #65A30D; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; margin-top: 15px; }
         .module-body h4:first-child { margin-top: 0; }
-        .module-body p { font-size: 0.95rem; color: #666; margin-bottom: 10px; }
+        .module-body p { font-size: 0.95rem; color: #64748B; margin-bottom: 10px; }
         .module-body ul { margin-left: 20px; }
-        .module-body li { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
-        .credential-badge { background: #f0f0f0; padding: 10px; border-radius: 4px; font-size: 0.85rem; color: #2d9c7f; font-weight: 600; margin-top: 15px; }
+        .module-body li { font-size: 0.9rem; color: #64748B; margin-bottom: 8px; }
+        .credential-badge { background: #E2E8F0; padding: 10px; border-radius: 4px; font-size: 0.85rem; color: #65A30D; font-weight: 600; margin-top: 15px; }
         
         /* Pillar Legend */
         .pillar-legend { background: white; padding: 40px; border-radius: 8px; margin: 50px 0; }
-        .pillar-legend h3 { color: #2d9c7f; font-size: 1.4rem; margin-bottom: 30px; }
+        .pillar-legend h3 { color: #65A30D; font-size: 1.4rem; margin-bottom: 30px; }
         .pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .pillar-item h4 { color: #2d9c7f; font-weight: 700; margin-bottom: 10px; }
-        .pillar-item p { color: #666; font-size: 0.95rem; }
+        .pillar-item h4 { color: #65A30D; font-weight: 700; margin-bottom: 10px; }
+        .pillar-item p { color: #64748B; font-size: 0.95rem; }
         
         /* Learning Outcomes */
-        .outcomes { background: white; padding: 40px; border-radius: 8px; margin: 40px 0; border-left: 5px solid #2d9c7f; }
-        .outcomes h3 { color: #2d9c7f; font-size: 1.3rem; margin-bottom: 20px; }
+        .outcomes { background: white; padding: 40px; border-radius: 8px; margin: 40px 0; border-left: 5px solid #65A30D; }
+        .outcomes h3 { color: #65A30D; font-size: 1.3rem; margin-bottom: 20px; }
         .outcomes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
         .outcome-item { }
-        .outcome-item h4 { color: #2d9c7f; font-weight: 700; margin-bottom: 10px; }
+        .outcome-item h4 { color: #65A30D; font-weight: 700; margin-bottom: 10px; }
         .outcome-item ul { margin-left: 20px; }
-        .outcome-item li { font-size: 0.95rem; color: #666; margin-bottom: 8px; }
+        .outcome-item li { font-size: 0.95rem; color: #64748B; margin-bottom: 8px; }
         
         /* CTA */
         .cta-section { text-align: center; padding: 60px 20px; }
-        .cta-button { display: inline-block; background: #2d9c7f; color: white; padding: 18px 45px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; margin: 10px; transition: background 0.3s; border: none; cursor: pointer; }
-        .cta-button:hover { background: #1a5f52; }
-        .cta-secondary { background: transparent; color: #2d9c7f; border: 2px solid #2d9c7f; }
-        .cta-secondary:hover { background: #2d9c7f; color: white; }
+        .cta-button { display: inline-block; background: #65A30D; color: white; padding: 18px 45px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; margin: 10px; transition: background 0.3s; border: none; cursor: pointer; }
+        .cta-button:hover { background: #64748B; }
+        .cta-secondary { background: transparent; color: #65A30D; border: 2px solid #65A30D; }
+        .cta-secondary:hover { background: #65A30D; color: white; }
         
         /* Download Section */
-        .download-section { background: #2d9c7f; color: white; padding: 40px; border-radius: 8px; margin: 40px 0; text-align: center; }
+        .download-section { background: #65A30D; color: white; padding: 40px; border-radius: 8px; margin: 40px 0; text-align: center; }
         .download-section h3 { font-size: 1.3rem; margin-bottom: 20px; }
         .download-section p { margin-bottom: 20px; opacity: 0.95; }
         
@@ -91,6 +95,10 @@
 </head>
 <body>
 
+<nav class="page-nav" aria-label="Page navigation">
+    <div class="page-nav-inner"><a href="index.html" class="nav-back">← Back to Home</a></div>
+</nav>
+
 <div class="hero">
     <h1>The 9-Module Curriculum</h1>
     <p>Six phases. Five Pillars. Nine observable, trainable, measurable capabilities.</p>
@@ -107,7 +115,7 @@
 <section class="container">
     <div class="phase-header">
         <h2>The 6-Phase Arc</h2>
-        <p style="color: #666; font-size: 1.05rem;">How relational capability installs sequentially</p>
+        <p style="color: #64748B; font-size: 1.05rem;">How relational capability installs sequentially</p>
     </div>
     
     <div class="phase-list">
@@ -145,7 +153,7 @@
 </section>
 
 <section class="container">
-    <h2 style="color: #2d9c7f; font-size: 1.8rem; margin: 40px 0 30px; text-align: center;">The Nine Modules at a Glance</h2>
+    <h2 style="color: #65A30D; font-size: 1.8rem; margin: 40px 0 30px; text-align: center;">The Nine Modules at a Glance</h2>
     
     <div class="module-grid">
         <div class="module-card">
@@ -288,7 +296,7 @@
 <section class="container">
     <div class="pillar-legend">
         <h3>How Modules Map to the Five Pillars</h3>
-        <p style="color: #666; margin-bottom: 30px;">Each module installs capability aligned to one primary Pillar. The Pillars are the doctrine; the modules are how the doctrine becomes practice.</p>
+        <p style="color: #64748B; margin-bottom: 30px;">Each module installs capability aligned to one primary Pillar. The Pillars are the doctrine; the modules are how the doctrine becomes practice.</p>
         
         <div class="pillar-grid">
             <div class="pillar-item">
@@ -367,8 +375,8 @@
 </section>
 
 <section class="cta-section">
-    <h2 style="color: #2d9c7f; margin-bottom: 30px;">Ready to Understand the Path?</h2>
-    <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px;">A 30-minute curriculum walkthrough covers your organization's needs and where SHs fits.</p>
+    <h2 style="color: #65A30D; margin-bottom: 30px;">Ready to Understand the Path?</h2>
+    <p style="font-size: 1.1rem; color: #64748B; margin-bottom: 30px;">A 30-minute curriculum walkthrough covers your organization's needs and where SHs fits.</p>
     <a href="https://calendly.com/shs-team/curriculum-walkthrough" class="cta-button">Schedule 30-Min Walkthrough</a>
     <a href="/why-social-health-systems.html" class="cta-button cta-secondary">Learn How SHs Differs</a>
 </section>
